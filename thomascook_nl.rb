@@ -50,7 +50,7 @@ end
 begin
   url = driver.current_url
   driver.find_element(:id, "st_popup_acceptButton").click
-  driver.find_element(:xpath, "//a[@class='btn']").click
+  driver.find_element(:xpath, "//a[@onclick='PACKAGE.panel.solr.validateParty();']").click
 rescue => exception
   retry_count -= 1
   if retry_count > 0
