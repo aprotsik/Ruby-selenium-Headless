@@ -90,7 +90,7 @@ end
 #Click Book now
 begin
   url = driver.current_url
-  driver.find_element(:id, "calcbuttonspan_extra").click
+  driver.find_element(:id, "calcbuttonspan_calctransport").click
 rescue => exception
   retry_count -= 1
   if retry_count > 0
