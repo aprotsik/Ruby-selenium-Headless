@@ -49,7 +49,7 @@ end
 # Click search button
 begin
   url = driver.current_url
-  driver.find_element(:id, "QsmListerOrFullTextSearch_/sitecore/content/eComHome/Configuration/Common/Components/Redesign/FH/Vlieg2/QSM_amount").click
+  driver.find_element(:id, "QsmListerOrFullTextSearch_/sitecore/content/eComHome/Configuration/Common/Components/Redesign/SOLR/QSM").click
 rescue => exception
   retry_count -= 1
   if retry_count > 0
